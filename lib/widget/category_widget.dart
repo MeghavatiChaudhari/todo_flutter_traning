@@ -22,7 +22,7 @@ class PersonalCategoryWidget extends StatelessWidget {
                 const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
             decoration: BoxDecoration(
               color: My_Controller.selectedCategory.value == 'Personal'
-                  ? Colors.pink.shade200
+                  ? Colors.orangeAccent.shade100
                   : Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
@@ -63,7 +63,7 @@ class OfficeCategoryWidget extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
                 decoration: BoxDecoration(
                   color: My_Controller.selectedCategory.value == 'Office'
-                      ? Colors.pink.shade200
+                      ? Colors.orangeAccent.shade100
                       : Colors.white,
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -100,7 +100,7 @@ class CollegeCategoryWidget extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
                 decoration: BoxDecoration(
                   color: My_Controller.selectedCategory.value == 'College'
-                      ? Colors.pink.shade200
+                      ? Colors.orangeAccent.shade100
                       : Colors.white,
                   borderRadius: BorderRadius.circular(20),
                 ),
