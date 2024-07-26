@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/widget/greet_widget.dart';
+import 'package:todo/widget/category_row_widget.dart';
 
 class TodoScreen extends StatelessWidget {
   const TodoScreen({super.key});
@@ -8,7 +9,7 @@ class TodoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          padding: EdgeInsets.only(top: 70, left: 20),
+          padding: const EdgeInsets.only(top: 70, left: 20),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
@@ -21,12 +22,16 @@ class TodoScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                child: GreetWidget(),
+                child: const GreetWidget(),
               ),
 
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               // todo :- display name of user + motivational quote just after name with animation
+
+              const SizedBox(height: 10),
+
+              const CategoryRowWidget(),
             ],
           )),
     );
